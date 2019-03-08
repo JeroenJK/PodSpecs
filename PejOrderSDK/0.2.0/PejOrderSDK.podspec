@@ -15,6 +15,9 @@ Pod::Spec.new do |s|
 #    s.source                = { :path => '.' }
     s.swift_version         = '4.2'
     s.ios.deployment_target = '9.0'
-    s.source_files          = 'PejOrderSDK/Classes/**/*.{swift,xib}'
+    s.source_files          = 'PejOrderSDK/Classes/**/*.{swift}'
+    s.resource_bundles = {
+        'PejOrderSDK' => ['PejOrderSDK/Classes/**/*.{storyboard,xib}']
+    }
 end
 
